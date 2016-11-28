@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: btngroupDirective <small>directive:ngeoBtnGroup</small></title>
+    <title>JSDoc: Class: CreateGeoJSONBloodhound <small>service:ngeoCreateGeoJSONBloodhound</small></title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: btngroupDirective <small>directive:ngeoBtnGroup</small></h1>
+    <h1 class="page-title">Class: CreateGeoJSONBloodhound <small>service:ngeoCreateGeoJSONBloodhound</small></h1>
 
     
 
@@ -28,8 +28,8 @@
 
 <header>
     
-        <h2 id="btngroupDirective">
-            <span class="ancestors">ngeo.</span>btngroupDirective
+        <h2 id="CreateGeoJSONBloodhound">
+            <span class="ancestors">module:ngeo search namespace~ngeo.</span>CreateGeoJSONBloodhound
         </h2>
         
     
@@ -42,26 +42,40 @@
 
     
 
-    <h4 class="name" id="btngroupDirective"><span class="type-signature"></span>new btngroupDirective<span class="signature">($parse)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="CreateGeoJSONBloodhound"><span class="type-signature"></span>new CreateGeoJSONBloodhound<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    <p>Provides two directives: ngeo-btn-group and ngeo-btn.</p>
-<p>The ngeo-btn-group directive allows creating &quot;toggle&quot; groups. It works with
-the ngeo-btn directive.</p>
+    <p>Provides a function that creates a Bloodhound engine
+expecting GeoJSON responses from the search web service, and creating
+<code>ol.Feature</code> objects as suggestions.</p>
 <p>Example:</p>
-<pre class="prettyprint source"><code>&lt;div ngeo-btn-group>
-  &lt;button ngeo-btn class=&quot;btn&quot; ng-model=&quot;ctrl.drawPoint.active&quot;>&lt;/button>
-  &lt;button ngeo-btn class=&quot;btn&quot; ng-model=&quot;ctrl.drawLine.active&quot;>&lt;/button>
-&lt;/div></code></pre><p>In that example the ngeo-btn are combined together in a &quot;toggle group&quot;,
-where activating a button will deactivate the others.</p>
-<p>One can use <code>ng-model</code> directive at the group level in order to know if
-a button is active.</p>
-<p>Example:</p>
-<pre class="prettyprint source"><code>&lt;div ngeo-btn-group ngeo-btn-group-active=&quot;ctrl.drawToolActive&quot;></code></pre><p>See our live example: <a href="../examples/interactionbtngroup.html">../examples/interactionbtngroup.html</a></p>
+<pre class="prettyprint source"><code>var bloodhound = ngeoCreateGeoJSONBloodhound(
+  'http://example.com/fulltextsearch?query=%QUERY',
+  aFilterFunction,
+  ol.proj.get('EPSG:3857'));
+bloodhound.initialize();
+
+var bloodhound = ngeoCreateGeoJSONBloodhound(
+  '',
+  undefined,
+  ol.proj.get('EPSG:3857'),
+  ol.proj.get('EPSG:21781'),
+  {
+    remote: {
+      url: mySearchEngineUrl,
+      replace: function(url, query) {
+        return url +
+            '?qtext=' + encodeURIComponent(query) +
+            '&lang=' + gettextCatalog.currentLanguage;
+      }
+    }
+  }
+);
+bloodhound.initialize();</code></pre>
 </div>
 
 
@@ -72,56 +86,6 @@ a button is active.</p>
 
 
 
-
-
-    <h5>HTML attributes:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>ngeo-btn-group-active</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Any property of the scope.
-Tells whether at least one button of the group is active.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -158,8 +122,8 @@ Tells whether at least one button of the group is active.</td>
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
     
-        <a href="https://github.com/camptocamp/ngeo/blob/a2c28c71dd224d84f0b87750f4b82cb22ab7392d/src/directives/btngroup.js">src/directives/btngroup.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/a2c28c71dd224d84f0b87750f4b82cb22ab7392d/src/directives/btngroup.js#L41">line 41</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/a2c28c71dd224d84f0b87750f4b82cb22ab7392d/src/modules/search/search.js">src/modules/search/search.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/a2c28c71dd224d84f0b87750f4b82cb22ab7392d/src/modules/search/search.js#L201">line 201</a>
     </li></ul></dd>
     
 
@@ -182,16 +146,6 @@ Tells whether at least one button of the group is active.</td>
 
 
 
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>The directive specs.</p>
-</div>
-
-
-
-    
 
 
 
