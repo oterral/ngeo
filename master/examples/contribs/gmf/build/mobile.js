@@ -509,7 +509,7 @@ d[4]||(f=(d[3]?"http://":"mailto:")+f),a=d.index,w(n.substr(0,a)),z(f,d[0].repla
 //# sourceMappingURL=angular-sanitize.min.js.map
 
 /*
- AngularJS v1.5.9
+ AngularJS v1.6.0
  (c) 2010-2016 Google, Inc. http://angularjs.org
  License: MIT
 */
