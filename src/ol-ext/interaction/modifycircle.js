@@ -5,7 +5,6 @@ goog.require('ngeo.interaction.MeasureAzimut');
 goog.require('ol');
 goog.require('ol.Collection');
 goog.require('ol.Feature');
-goog.require('ol.MapBrowserEvent.EventType');
 goog.require('ol.MapBrowserPointerEvent');
 goog.require('ol.View');
 goog.require('ol.coordinate');

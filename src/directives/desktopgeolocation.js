@@ -212,7 +212,7 @@ ngeo.DesktopGeolocationController.prototype.deactivate_ = function() {
 
 
 /**
- * @param {ol.ObjectEvent} event Event.
+ * @param {ol.Object.EventType} event Event.
  * @private
  */
 ngeo.DesktopGeolocationController.prototype.setPosition_ = function(event) {
