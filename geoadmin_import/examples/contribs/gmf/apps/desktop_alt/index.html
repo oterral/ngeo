@@ -14,6 +14,11 @@
       </div>
     </header>
     <main>
+      <div
+         ngeo-import-dnd
+         ngeo-import-dnd-options="::mainCtrl.importOptions">
+      </div>
+
       <div class="gmf-app-data-panel">
         <div class="gmf-app-header">
           <div class="dropdown">
@@ -23,6 +28,25 @@
               <span translate>Themes</span>
               <span class="caret"></span>
             </a>
+            <div class="import">
+              <div>local</div>
+              <div class="import-local"
+                ngeo-import-local
+                ngeo-import-local-options="::mainCtrl.importOptions">
+              </div>
+              <div>online</div>
+              <div
+                ngeo-import-online
+                ngeo-import-online-options="::mainCtrl.importOptions">
+              </div>
+
+              <!-- Display WMS GetCapabilities results -->
+              <div ng-if="wmsGetCap"
+                   ngeo-wms-get-cap="wmsGetCap"
+                   ngeo-wms-get-cap-map="::map"
+                   ngeo-wms-get-cap-options="::mainCtrl.importOptions">
+              </div>
+            </div>
             <gmf-themeselector class="dropdown-menu"
               gmf-themeselector-currenttheme="mainCtrl.theme"
               gmf-themeselector-filter="::mainCtrl.filter">
@@ -220,7 +244,7 @@
       <ngeo-modal ng-model="mainCtrl.modalShareShown" ngeo-modal-destroy-content-on-hide="true">
         <gmf-share gmf-share-email="false"/>
       </ngeo-modal>
-      <ngeo-modal ng-model="disclaimerVisibility" ngeo-modal-destroy-content-on-hide="true">
+      <ngeo-modal ng-model="XXXXdisclaimerVisibility" ngeo-modal-destroy-content-on-hide="true">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         </div>
@@ -253,7 +277,7 @@
     <script src="../../../../lib/watchwatchers.js"></script>
     <script>
       (function() {
-        var cacheVersion = 'fea2fa3c5dd3d0a7fd0eb1e491b0aac5392ad598';
+        var cacheVersion = '9b167537eddd9a25f283589a3d1f926893abef01';
         var urlElements = window.location.pathname.split('/');
 
         var angularLocaleScriptUrlElements = urlElements.slice(0, urlElements.length - 3);
