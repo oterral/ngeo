@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Interface: BackgroundEvent</title>
+    <title>JSDoc: Namespace: ngeox.search</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Interface: BackgroundEvent</h1>
+    <h1 class="page-title">Namespace: ngeox.search</h1>
 
     
 
@@ -28,8 +28,8 @@
 
 <header>
     
-        <h2 id="BackgroundEvent">
-            <span class="ancestors">ngeox.</span>BackgroundEvent
+        <h2 id="LocationSearchOptions">
+            <span class="ancestors">ngeox.search.</span>LocationSearchOptions
         </h2>
         
     
@@ -41,6 +41,193 @@
         
 
         
+
+
+    
+    <h5 class="subsection-title">Properties:</h5>
+    
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>origins</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>targetProjection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="http://openlayers.org/en/master/apidoc/ol.proj.Projection.html">ol.proj.Projection</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">BloodhoundOptions</span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>remoteOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">BloodhoundRemoteOptions</span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>prepare</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
 
 
 <dl class="details">
@@ -74,7 +261,7 @@
     <dd class="tag-source"><ul class="dummy"><li>
     
         <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1314">line 1314</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1451">line 1451</a>
     </li></ul></dd>
     
 
@@ -105,10 +292,14 @@
 
         
             
-<h4 class="name" id="previous"><span class="type-signature"></span>previous<span class="type-signature"> :<a href="http://openlayers.org/en/master/apidoc/ol.layer.Base.html">ol.layer.Base</a></span></h4>
+<h4 class="name" id="limit"><span class="type-signature"></span>limit<span class="type-signature"> :<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></h4>
 
 
 
+
+<div class="description">
+    <p>The maximum number of results to retrieve per request (max. and default limit=50).</p>
+</div>
 
 
 
@@ -116,7 +307,10 @@
     <ul>
         <li>
             
-<span class="param-type"><a href="http://openlayers.org/en/master/apidoc/ol.layer.Base.html">ol.layer.Base</a></span>
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
 
 
         </li>
@@ -157,7 +351,394 @@
     <dd class="tag-source"><ul class="dummy"><li>
     
         <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1320">line 1320</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1458">line 1458</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="options"><span class="type-signature"></span>options<span class="type-signature"> :BloodhoundOptions|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></h4>
+
+
+
+
+<div class="description">
+    <p>Optional Bloodhound options. If <code>undefined</code>, the default Bloodhound config will be used.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">BloodhoundOptions</span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1481">line 1481</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="origins"><span class="type-signature"></span>origins<span class="type-signature"> :<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></h4>
+
+
+
+
+<div class="description">
+    <p>A comma separated list of origins.
+Possible origins are: zipcode,gg25,district,kantone,gazetteer,address,parcel
+Per default all origins are used.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1467">line 1467</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="prepare"><span class="type-signature"></span>prepare<span class="type-signature"> :<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span></h4>
+
+
+
+
+<div class="description">
+    <p>Optional function to prepare the request.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1495">line 1495</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="remoteOptions"><span class="type-signature"></span>remoteOptions<span class="type-signature"> :BloodhoundRemoteOptions|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></h4>
+
+
+
+
+<div class="description">
+    <p>Optional Bloodhound remote options. Only used if <code>remote</code> is not defined in <code>options</code>.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">BloodhoundRemoteOptions</span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1488">line 1488</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="targetProjection"><span class="type-signature"></span>targetProjection<span class="type-signature"> :<a href="http://openlayers.org/en/master/apidoc/ol.proj.Projection.html">ol.proj.Projection</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></h4>
+
+
+
+
+<div class="description">
+    <p>Target projection.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="http://openlayers.org/en/master/apidoc/ol.proj.Projection.html">ol.proj.Projection</a></span>
+|
+
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1474">line 1474</a>
     </li></ul></dd>
     
 

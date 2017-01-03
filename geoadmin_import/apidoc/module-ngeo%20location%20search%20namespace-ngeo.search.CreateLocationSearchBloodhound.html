@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Interface: BackgroundEvent</title>
+    <title>JSDoc: Class: CreateLocationSearchBloodhound <small>service:search.createLocationSearchBloodhound</small></title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Interface: BackgroundEvent</h1>
+    <h1 class="page-title">Class: CreateLocationSearchBloodhound <small>service:search.createLocationSearchBloodhound</small></h1>
 
     
 
@@ -28,8 +28,8 @@
 
 <header>
     
-        <h2 id="BackgroundEvent">
-            <span class="ancestors">ngeox.</span>BackgroundEvent
+        <h2 id="CreateLocationSearchBloodhound">
+            <span class="ancestors">module:ngeo location search namespace~ngeo.search.</span>CreateLocationSearchBloodhound
         </h2>
         
     
@@ -40,7 +40,39 @@
     
         
 
-        
+    
+
+    <h4 class="name" id="CreateLocationSearchBloodhound"><span class="type-signature"></span>new CreateLocationSearchBloodhound<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Provides a function that creates a Bloodhound engine
+for the GeoAdmin Location Search API, which creates <code>ol.Feature</code> objects
+as suggestions.</p>
+<p>See: http://api3.geo.admin.ch/services/sdiservices.html#search</p>
+<p>Example:</p>
+<pre class="prettyprint source"><code>var bloodhound = ngeoCreateLocationSearchBloodhound({
+  targetProjection: ol.proj.get('EPSG:3857'),
+  limit: 10
+});
+bloodhound.initialize();</code></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -73,8 +105,8 @@
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
     
-        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1314">line 1314</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/src/modules/search/createlocationsearchbloodhound.js">src/modules/search/createlocationsearchbloodhound.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/src/modules/search/createlocationsearchbloodhound.js#L32">line 32</a>
     </li></ul></dd>
     
 
@@ -86,7 +118,20 @@
 </dl>
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     </div>
 
@@ -100,80 +145,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="previous"><span class="type-signature"></span>previous<span class="type-signature"> :<a href="http://openlayers.org/en/master/apidoc/ol.layer.Base.html">ol.layer.Base</a></span></h4>
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><a href="http://openlayers.org/en/master/apidoc/ol.layer.Base.html">ol.layer.Base</a></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js">options/ngeox.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/098578cc71901a845e2db29d3cee8ee87ea3cc8e/options/ngeox.js#L1320">line 1320</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
     
 
     
