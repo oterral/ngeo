@@ -57,7 +57,7 @@ elements in arr2 changes, arr1 is reordered to have the same order as arr2.</p>
 <p>This can for example be used to synchronize the array of layers in the map
 with the array of selected layers, where layers may be added to/removed from
 the map, and the order of selected layers may change.</p>
-<pre class="prettyprint source"><code>var dereg = ngeoSyncArrays(map.getLayers().getArray(), selectedLayers,
+<pre class="prettyprint source"><code>let dereg = ngeoSyncArrays(map.getLayers().getArray(), selectedLayers,
     true, scope, function(layer) {
       // exclude the layer at index 0 in the map
       return map.getLayers().indexOf(layer) !== 0;
@@ -108,8 +108,8 @@ the map, and the order of selected layers may change.</p>
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
     
-        <a href="https://github.com/camptocamp/ngeo/blob/73f0979901bbf2e071a80641ef5bc3146fd9a097/src/services/syncarrays.js">src/services/syncarrays.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/73f0979901bbf2e071a80641ef5bc3146fd9a097/src/services/syncarrays.js#L31">line 31</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/c1a84ed7fd3c15fec97b63bb3b49c06f951f9e54/src/services/syncarrays.js">src/services/syncarrays.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/c1a84ed7fd3c15fec97b63bb3b49c06f951f9e54/src/services/syncarrays.js#L31">line 31</a>
     </li></ul></dd>
     
 
