@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: BackgroundEvent</title>
+    <title>JSDoc: Class: Raster <small>service:gmfRaster</small></title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: BackgroundEvent</h1>
+    <h1 class="page-title">Class: Raster <small>service:gmfRaster</small></h1>
 
     
 
@@ -28,8 +28,8 @@
 
 <header>
     
-        <h2 id="BackgroundEvent">
-            <span class="ancestors">ngeo.</span>BackgroundEvent
+        <h2 id="Raster">
+            <span class="ancestors">gmf.</span>Raster
         </h2>
         
     
@@ -42,11 +42,17 @@
 
     
 
-    <h4 class="name" id="BackgroundEvent"><span class="type-signature"></span>new BackgroundEvent<span class="signature">(type, previous)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Raster"><span class="type-signature"></span>new Raster<span class="signature">($http, gmfRasterUrl)</span><span class="type-signature"></span></h4>
 
     
 
 
+
+<div class="description">
+    <p>The Raster service.
+Uses the c2cgeoportal's raster to obtain different kinds of
+information at a specific coordinate.</p>
+</div>
 
 
 
@@ -81,7 +87,7 @@
 
         <tr>
             
-                <td class="name"><code>type</code></td>
+                <td class="name"><code>$http</code></td>
             
 
             <td class="type">
@@ -92,14 +98,14 @@
 
             
 
-            <td class="description last"><p>Type.</p></td>
+            <td class="description last"><p>Angular http service.</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>previous</code></td>
+                <td class="name"><code>gmfRasterUrl</code></td>
             
 
             <td class="type">
@@ -110,7 +116,7 @@
 
             
 
-            <td class="description last"><p>Previous background layer.</p></td>
+            <td class="description last"><p>URL to a the c2cgeoportal raster service.</p></td>
         </tr>
 
     
@@ -137,13 +143,6 @@
     
 
     
-    <dt class="implements">Implements:</dt>
-    <dd class="implements"><ul>
-        
-            <li><a href="ngeox.BackgroundEvent.html">ngeox.BackgroundEvent</a></li>
-        
-    </ul></dd>
-    
 
     
 
@@ -161,8 +160,8 @@
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
     
-        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/src/services/backgroundlayermgr.js">src/services/backgroundlayermgr.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/src/services/backgroundlayermgr.js#L33">line 33</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/contribs/gmf/src/services/raster.js">contribs/gmf/src/services/raster.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/contribs/gmf/src/services/raster.js#L27">line 27</a>
     </li></ul></dd>
     
 
@@ -192,17 +191,6 @@
     </div>
 
     
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-
-    <ul>
-        <li><a href="http://openlayers.org/en/master/apidoc/ol.events.Event.html">ol.events.Event</a></li>
-    </ul>
-
-
-    
 
     
 
@@ -213,30 +201,112 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         
             
-<h4 class="name" id="previous"><span class="type-signature"></span>previous<span class="type-signature"> :<a href="http://openlayers.org/en/master/apidoc/ol.layer.Base.html">ol.layer.Base</a></span></h4>
+
+    
+
+    <h4 class="name" id="getRaster"><span class="type-signature"></span>getRaster<span class="signature">(coordinate, [opt_params]<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
 
 
 
 
-<div class="description">
-    <p>The layer used as background before a change.</p>
-</div>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<span class="param-type"><a href="http://openlayers.org/en/master/apidoc/ol.layer.Base.html">ol.layer.Base</a></span>
+                <td class="name"><code>coordinate</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Coordinate.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>[opt_params]</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Optional parameters for the request.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
-        </li>
-    </ul>
+
 
 
 
@@ -255,13 +325,6 @@
     
 
     
-    <dt class="implements">Implements:</dt>
-    <dd class="implements"><ul>
-        
-            <li><a href="ngeox.BackgroundEvent.html#previous">ngeox.BackgroundEvent#previous</a></li>
-        
-    </ul></dd>
-    
 
     
 
@@ -279,8 +342,8 @@
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
     
-        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/src/services/backgroundlayermgr.js">src/services/backgroundlayermgr.js</a>,
-        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/src/services/backgroundlayermgr.js#L41">line 41</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/contribs/gmf/src/services/raster.js">contribs/gmf/src/services/raster.js</a>,
+        <a href="https://github.com/camptocamp/ngeo/blob/e6dec9966817d018a759dd311646506323be83c2/contribs/gmf/src/services/raster.js#L49">line 49</a>
     </li></ul></dd>
     
 
@@ -296,9 +359,27 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
         
+<div class="param-desc">
+    <p>Promise.</p>
+</div>
+
+
+
     
 
+
+
+        
     
 
     
